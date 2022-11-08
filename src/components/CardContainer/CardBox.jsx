@@ -11,7 +11,8 @@ const CardBox = () => {
       
   return (
     <div className='card-box'>
-        <h2>tHis is CartItems Details</h2>
+      <div className='card-con'>
+      <h2>tHis is CartItems Details</h2>
         {cartItems.map((ele)=>{
           return (
            
@@ -23,7 +24,10 @@ const CardBox = () => {
     }
        
     </div>
+
+      </div>
+       
   )
 }
 
-export default CardBox
+export default CardBox;

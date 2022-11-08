@@ -14,19 +14,18 @@ const Cards = ({ele}) => {
   
   const clickHandler =(params) =>{
     console.log(params)
-       alert("working")
-    dispatch(addToCart(2))
+       
+    dispatch(addToCart(params))
   
   }
-  // const array=[]
- 
+  
    
   return (
    
     <div className='card'>
   
     <img src='https://thearchitectsdiary.com/wp-content/uploads/2022/03/foresight-associates-19.jpg' className='card-image'/>
-    <div className='container'>
+    <div className='container' key={ele?.id}>
       <div className='sub-div'>
          <h1 key={ele?.id}></h1>
       <h3 style={{"color":"blue"}}>{ele?.price}</h3>

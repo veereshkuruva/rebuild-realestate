@@ -12,10 +12,16 @@ import data from '../../Data';
     initialState,
     reducers:{
                 addToCart:(state,action)=>{
-                     
+                          state.EmptyCart.push(action.payload)
+                    
+                     }
                 } ,
+
+                // removeItems:(state,action)=>{
+                //   const itemId =state.EmptyCart.filter((ele=>ele.id!===(action.payload.id)
+                // }
               
-    }
+    
 })
 // console.log(cartSlice)
 export const {addToCart} =cartSlice.actions

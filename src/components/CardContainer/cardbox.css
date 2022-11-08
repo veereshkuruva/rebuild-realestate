@@ -1,6 +1,12 @@
-.card-box{
+.card-con{
+    /* display:flex; */
     display: grid;
     grid-template-columns:repeat(3,1fr);
+    /* flex-direction: row; */
      background-color: aqua;
+     grid-gap:1rem;
+     width: 80vw;
+     margin: auto;
+     padding-bottom: 6rem;
   
 }
