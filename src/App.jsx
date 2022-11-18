@@ -7,6 +7,7 @@ import Like from './components/FavPage/Like';
 
 import Main from './components/Main';
 import Navbar from './components/Navbar/Navbar';
+import Prac from './components/Prac';
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
           <Route path='/fav' element={<Like/>}/>
          
         </Routes>
-  
+             <Prac/>
     </div>
   )
 }

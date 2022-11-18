@@ -18,7 +18,8 @@ const Navbar = () => {
          <>
       
     <header>
-      <Link to ='/'><h2 className='logo' >Estate</h2></Link>
+    <Link to='/'><h2 className='logo' >Estate</h2></Link>
+
 
       
       <nav>
@@ -30,9 +31,9 @@ const Navbar = () => {
           <li><a href='#'>Manage Property</a></li>
           <li><a href='#'>Resource</a></li>
        
-       <Link to='/fav'> <button >Fav</button></Link>
+          <Link to='/fav'> <button style={{"background":"orange"}}>Fav</button></Link>
    
-    <Link to='/log'><button>login</button></Link>
+   <button>login</button>
         </ul>
       </nav>
 

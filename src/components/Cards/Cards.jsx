@@ -21,9 +21,12 @@ const Cards = ({ele}) => {
   
    
   return (
-   
-    <div className='card'>
   
+
+    
+    
+    <div className='card'>
+     
     <img src='https://thearchitectsdiary.com/wp-content/uploads/2022/03/foresight-associates-19.jpg' className='card-image'/>
     <div className='container' key={ele?.id}>
       <div className='sub-div'>
@@ -47,6 +50,7 @@ const Cards = ({ele}) => {
     </div>
      
     </div>
+    
   )
 }
 
