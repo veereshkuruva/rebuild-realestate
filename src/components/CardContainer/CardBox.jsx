@@ -11,7 +11,7 @@ const CardBox = () => {
       
   return (
     <div className='card-box'>
-      {/* <div className='card-con'> */}
+ 
    
         {cartItems.map((ele)=>{
           return (
@@ -25,7 +25,7 @@ const CardBox = () => {
        
     </div>
 
-      // </div>
+     
        
   )
 }
