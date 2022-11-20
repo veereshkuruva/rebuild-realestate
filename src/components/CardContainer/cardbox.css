@@ -1,12 +1,9 @@
 .card-box{
-    /* display:flex; */
+  
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    /* flex-direction: row; */
-     background-color: aqua;
-     grid-gap:1rem;
-     width: 80vw;
-     margin: auto;
+     background-color:rgb(185, 174, 123);
+     margin:10px auto;
      padding-bottom: 6rem;
   
 }

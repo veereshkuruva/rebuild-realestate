@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '/src/Redux/Cart/cartSlice.js';
 
 
+
 const Cards = ({ele}) => {
   const dispatch =useDispatch()
 // console.log(ele)
@@ -23,7 +24,7 @@ const Cards = ({ele}) => {
   return (
   
 
-    
+   
     
     <div className='card'>
      
@@ -50,7 +51,7 @@ const Cards = ({ele}) => {
     </div>
      
     </div>
-    
+   
   )
 }
 

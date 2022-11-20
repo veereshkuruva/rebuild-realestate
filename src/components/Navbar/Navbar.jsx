@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 
+
 const Navbar = () => {
  
   const navigate = useNavigate();
@@ -17,9 +18,10 @@ const Navbar = () => {
 
          <>
       
-    <header>
-    <Link to='/'><h2 className='logo' >Estate</h2></Link>
 
+    <header>
+   
+    <Link to='/'><h2 className='logo'  >Estate</h2></Link>
 
       
       <nav>
@@ -33,14 +35,15 @@ const Navbar = () => {
        
           <Link to='/fav'> <button style={{"background":"orange"}}>Fav</button></Link>
    
-   <button>login</button>
+             {/* <button>login</button> */}
         </ul>
       </nav>
 
       {/* <a href='#'><button>Login</button></a> */}
-      <a href='#'><button>signup</button></a>
+      <a href='#'><button className='btn1'>Login</button></a>
+      <a href='#'><button className='btn1'>signup</button></a>
     </header>
-  
+    
     </>
       
   )

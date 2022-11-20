@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Cards from '../Cards/Cards'
+
 import './cardbox.css'
 
 const CardBox = () => {
@@ -10,8 +11,10 @@ const CardBox = () => {
      
       
   return (
-    <div className='card-box'>
+    <>
  
+   
+    <div className='card-box'>
    
         {cartItems.map((ele)=>{
           return (
@@ -25,7 +28,7 @@ const CardBox = () => {
        
     </div>
 
-     
+    </>
        
   )
 }
