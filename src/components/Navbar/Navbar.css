@@ -12,7 +12,6 @@ header{
    justify-content:center;
    align-items:center;
    padding: 30px 10%;
-  /* background-color: #0088a9; */
    position: fixed;
    top: 0;
    right: 0;
@@ -69,4 +68,43 @@ button:hover{
     background-color: chartreuse;
     padding: 2px auto;
     text-align: center;
+}
+.toggle{
+    position:absolute;
+    top:16px;
+    right: 16px;
+    font-size: 16px;
+    display: none;
+}
+.crossover{
+    position:absolute;
+    top:16px;
+    right: 16px;
+    font-size: 16px;
+    font-size:30px;
+    display: none;
+}
+@media (max-width:500px) {
+  
+   nav{
+    display:none;
+   
+   }
+  
+ 
+    .toggle{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .crossover{
+        display: block;
+    }
+    .logo{
+        position:absolute;
+        top:10px;
+        left: 16px;
+    }
+    .btn1{
+        display: none;
+    }
 }

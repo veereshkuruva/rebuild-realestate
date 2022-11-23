@@ -1,9 +1,10 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import Cards from '../Cards/Cards'
 import './Navbar.css'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 // import Card from '../Cards/Cards'
+// import Search from '../PropertySeacrch/Search'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -13,6 +14,8 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
  
   const navigate = useNavigate();
+  const [click,setClick] =useState(false)
+  const handleClick =()=>setClick(!click)
  
   return (
 
@@ -25,7 +28,7 @@ const Navbar = () => {
 
       
       <nav>
-        <ul className='nav-links'>
+        <ul className="nav-links">
          
           <li><a href='#'>Rent</a></li>
           <li><a href='#'>Buy</a></li>
@@ -35,15 +38,21 @@ const Navbar = () => {
        
           <Link to='/fav'> <button style={{"background":"orange"}}>Fav</button></Link>
    
-             {/* <button>login</button> */}
         </ul>
       </nav>
-
-      {/* <a href='#'><button>Login</button></a> */}
+            <div onClick={ handleClick}>
+            {
+              click ? ( <i className='fas fa-bars toggle'></i>):(<i class="fa fa-times crossover"  aria-hidden="true"></i>)
+            }
+          
+             
+              
+            </div>
+      
       <a href='#'><button className='btn1'>Login</button></a>
       <a href='#'><button className='btn1'>signup</button></a>
     </header>
-    
+   
     </>
       
   )

@@ -1,30 +1,47 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Cards from '../Cards/Cards'
+import Search from '../PropertySeacrch/Search'
 
 import './cardbox.css'
 
 const CardBox = () => {
     const cartItems =useSelector((state)=>state.cartSlice.cartItems)
-    // console.log(cartItems)
+   
     
-     
+     const filtered_data =useSelector((state)=>state.cartSlice.filtered_data)
+     console.log(filtered_data)
       
   return (
     <>
- 
-   
     <div className='card-box'>
+
+      {
+        filtered_data.length===0 ?
+          cartItems.map((ele)=>{
+                return (
+                 
+                    <Cards key={ele.id} ele = {ele}/>
+                   
+                )
+               
+            }) :
+            filtered_data.map((ele)=>{
+              return (
+                <Cards data={ele}/>
+              )
+            })
+      }
    
-        {cartItems.map((ele)=>{
-          return (
-           
-              <Cards ele = {ele}/>
-             
-          )
+    {/* //     {cartItems.map((ele)=>{
+    //       return (
+    //         */}
+             {/* <Cards key={ele.id} ele = {ele}/>
+              */}
+    {/* // //       ) */}
          
-      })
-    }
+    {/* // //   }) */}
+    {/* // // } */}
        
     </div>
 

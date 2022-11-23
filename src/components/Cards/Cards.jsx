@@ -3,6 +3,7 @@ import './card.css'
 import { BiHome } from "react-icons/bi";
 import { FaGratipay,FaBath } from "react-icons/fa";
 import {AiFillUsb } from "react-icons/ai";
+
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '/src/Redux/Cart/cartSlice.js';
 
@@ -22,10 +23,7 @@ const Cards = ({ele}) => {
   
    
   return (
-  
-
-   
-    
+  <>   
     <div className='card'>
      
     <img src='https://thearchitectsdiary.com/wp-content/uploads/2022/03/foresight-associates-19.jpg' className='card-image'/>
@@ -51,8 +49,8 @@ const Cards = ({ele}) => {
     </div>
      
     </div>
-   
+    </>
   )
 }
 
-export default Cards
+export default Cards;

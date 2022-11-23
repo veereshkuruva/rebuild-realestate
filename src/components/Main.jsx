@@ -1,14 +1,16 @@
 import React from 'react'
+import Search from './PropertySeacrch/Search'
 import CardBox from './CardContainer/CardBox'
-import Cards from './Cards/Cards'
-import Navbar from './Navbar/Navbar'
+
+
+
 
 
 const Main = () => {
   return (
     <div>
-      <Navbar/>
    
+      <Search/>
      <CardBox/>
     </div>
   )

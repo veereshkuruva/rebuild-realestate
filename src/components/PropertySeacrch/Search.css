@@ -1,0 +1,51 @@
+.propeties{
+    display: inline-flex;
+    margin-left: 15%;
+    margin-top: 25px;
+    
+}
+.cardsame{
+    margin-left: 25%;
+}
+.searchbtn{
+    margin-left: 15%;
+    margin-top: 15px;
+}
+.search{
+    margin-top: 100px;
+    margin-left: 15%;
+    
+    
+
+}
+.searchheading{
+    font-size:1.4rem;
+}
+.searchinput{
+    margin-left: 25%;
+}
+button{
+    background-color: blueviolet;
+   
+   
+}
+@media (max-width:500px){
+    .search{
+    display:flex;
+    flex-direction: row;
+   
+    }
+    .search span{
+        margin-top:0px;
+       
+    }
+    .propeties ,.cardsame,.cardsame{
+        display: inline-flex;
+        flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        display: none;
+    }
+  
+
+}

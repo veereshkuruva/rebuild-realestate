@@ -2,8 +2,16 @@
   
     display: grid;
     grid-template-columns:repeat(3,1fr);
-     background-color:rgb(185, 174, 123);
-     margin:10px auto;
-     padding-bottom: 6rem;
-  
+    background-color: aqua;
+    margin-top:0px;
+    
+}
+
+@media (max-width:600px) {
+  .card-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 }
