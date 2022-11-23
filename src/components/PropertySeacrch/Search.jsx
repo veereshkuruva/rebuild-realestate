@@ -50,47 +50,42 @@ const dispatch =useDispatch()
 
   return (
     <>
-      <div>
-
-        <div className='search'>
-          <span className='searchheading'><b>Search properties to rent</b></span>
-
-
-        </div>
-        <div className='propeties'>
-          <div className='loc'>
-            <div>Location</div>
-            <input type="text"
-              name='location'
-              onChange={changeHandler}
-            />
-
-          </div>
-          <div className='cardsame'>
-            <div>When</div>
-            <input type="date" id="birthday" name='date' onChange={timeHandler} />
-          </div>
-          <div className='cardsame'>
-            <div >price</div>
-            <select onChange={priceHandler} >
-              <option value='500-2500'>1000-2500</option>
-              <option value='2500-5000'>2500-5000</option>
-            </select>
-          </div>
-          <div className='cardsame'>
-            <div>Property</div>
-            <select onChange={propertyHandler}>
-              <option value='1bhk'>1bhk</option>
-              <option value='2bhk'>2bhk</option>
-              <option value='3bhk'>3bhk</option>
-            </select>
-          </div>
-          <div className='searchbtn'>
-            <button onClick={()=>clickBtnHandler(location,price,propertyType,time)} style={{"color":"black"}}>Search</button>
-          </div>
-        </div>
-
+     <div className="search-box">
+      <div className="search-location" >
+        <p className="search-name">location</p>
+       
+        <input type="text" className="search-input" name="location" onChange={changeHandler}/>
       </div>
+
+      <div className="search-location">
+        <p className="search-name">when</p>
+        <input type="date" className="search-input" name="time" onChange={timeHandler}/>
+      </div>
+
+      <div className="search-location">
+        <p className="search-name">price</p>
+        <select name="price" id="cars" className="search-select" onChange={priceHandler}>
+          <option value="2000-5000">2000-5000</option>
+          <option value="5000-10000">5000-10000</option>
+          <option value="10000-20000">10000-20000</option>
+          <option value="20000-50000">20000-50000</option>
+        </select>
+      </div>
+
+      <div className="search-location">
+        <p className="search-name">property type</p>
+        <select name="price" id="cars" className="search-select" onChange={propertyHandler}>
+          <option value="1bhk">1bhk</option>
+          <option value="2bhk">2bhk</option>
+          <option value="3bhk">3bhk</option>
+          <option value="4bhk">20000-50000</option>
+        </select>
+      </div>
+
+      <div className="search-location-button">
+        <button className="search-btn" onClick={()=>clickBtnHandler(location,price,propertyType,time)}>Search</button>
+      </div>
+    </div>
     </>
   )
 }

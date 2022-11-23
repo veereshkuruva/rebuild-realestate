@@ -3,7 +3,7 @@ const data=[
         id:1,
         name:"",
       location:"hyderabad",
-      price:2000,
+      price:4000,
       propertyType:"1bhk",
       date:"2022-11-06",
       
@@ -13,7 +13,7 @@ const data=[
         id:2,
         name:"",
       location:"hyderabad",
-      price:3000,
+      price:5000,
       propertyType:"1bhk",
       date:"2022-11-06",
        
@@ -22,8 +22,8 @@ const data=[
     {
         id:3,
         name:"",
-        location:"bangalore",
-        price:5000,
+        location:"mumbai",
+        price:15000,
         propertyType:"1bhk",
         date:"2022-11-03",
         
@@ -32,7 +32,7 @@ const data=[
         id:4,
         name:"",
       location:"hyderabad",
-      price:2000,
+      price:7000,
       propertyType:"3bhk",
       date:"2022-11-05",
        
@@ -40,8 +40,8 @@ const data=[
     {
         id:5,
         name:"",
-        location:"hyderabad",
-        price:4000,
+        location:"pune",
+        price:5000,
         propertyType:"1bhk",
         date:"2022-11-5",
        
@@ -50,7 +50,7 @@ const data=[
         id:6,
         name:"",
       location:"bangalore",
-      price:2500,
+      price:10000,
       propertyType:"1bhk",
       date:"2022-11-01",
        
@@ -59,7 +59,7 @@ const data=[
         id:7,
         name:"",
       location:"delhi",
-      price:3000,
+      price:9000,
       propertyType:"2bhk",
       date:"2022-11-02",
        
@@ -67,7 +67,7 @@ const data=[
     {
         id:8,
         name:"",
-        location:"hyderabad",
+        location:"pune",
         price:3000,
         propertyType:"1bhk",
         date:"2022-11-06",
@@ -77,7 +77,7 @@ const data=[
       id:9,
       name:"",
       location:"hyderabad",
-      price:2000,
+      price:4000,
       propertyType:"1bhk",
       date:"2022-11-06",
      

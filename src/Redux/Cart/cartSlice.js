@@ -4,7 +4,7 @@ import data from '../../Data';
   const initialState ={
     cartItems:data,
     EmptyCart:[] , 
-     filtered_data:[],
+    filtered_data:[],
     amount:50,
     isLoading:true
 }
@@ -20,7 +20,7 @@ import data from '../../Data';
                       function location(data){
                         return data.location === action.payload ;
                       }
-                      state.filtered_data = state.estate_data.filter(location);
+                      state.filtered_data = state.cartItems.filter(location);
                       console.log(state.filtered_data);
                     },
                     price_search: (state,action) => {
@@ -33,14 +33,14 @@ import data from '../../Data';
                        
                       };
                       
-                      state.filtered_data = state.estate_data.filter(price);
+                      state.filtered_data = state.cartItems.filter(price);
                       console.log(state.filtered_data);
                     },   
                     propertyType_search:(state,action) => {
                       function property(data){
                         return data.propertyType === action.payload ;
                       }
-                      state.filtered_data = state.estate_data.filter(property);
+                      state.filtered_data = state.cartItems.filter(property);
                       console.log(state.filtered_data,action.payload);
                     },
                     date_search:(state,action) => {
@@ -48,7 +48,7 @@ import data from '../../Data';
                       function dateFilter(data){
                         return data.date == action.payload
                       }
-                      state.filtered_data = state.estate_data.filter(dateFilter)
+                      state.filtered_data = state.cartItems.filter(dateFilter)
                       console.log(state.filtered_data);
                     }
 

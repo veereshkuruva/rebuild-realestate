@@ -28,7 +28,7 @@ const CardBox = () => {
             }) :
             filtered_data.map((ele)=>{
               return (
-                <Cards data={ele}/>
+                <Cards ele={ele}  key={ele.id} />
               )
             })
       }
